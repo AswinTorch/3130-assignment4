@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>3130 Assignment 4</title>
-</head>
-<body>
-  <h1>3130 Assignment 4</h1>
-  <h3>By Aswin Nair</h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3130 Assignment 4</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="//cdn.wordart.com/wordart.min.js" async defer></script>
+  </head>
+  <body class="container text-center">
+    <h1 class="pt-4">"44 Bars"</h1>
+    <h3>By Logic</h3>
+
+    <!-- Wordcloud -->
+    <div
+      style="width: 600px; height: 600px; margin:auto;"
+      data-wordart-src="//cdn.wordart.com/json/02a7ibr4u5zk"
+      data-wordart-show-attribution
+    ></div>
+    <hr />
+
+    <h4>3130 Assignment 4 - Aswin Nair</h4>
+    <!-- Info -->
+    <div>
+      <h5 align="left">Info:</h5>
+      <p style="text-align:justify">
+        This website was made for the fourth assignment in my data structures
+        course at Brooklyn College. Its intention is to visualize data that was
+        produced from my previous assignment in the same class. In that
+        assignment, I created a Java program that took an input file with song
+        lyrics which then generated a frequency list of the words in the file. I
+        used that final output file to create this word cloud presentation to
+        better visualize the data.
+      </p>
+    </div>
+
+    <!-- Under The Hood -->
+    <div>
+      <h5 align="left">Under The Hood:</h5>
+      <p style="text-align:justify">
+        The application was written in Java, using the HashMap data structure in
+        Java to store the words from the input.
+      </p>
+      <ul align="left">
+        <li>
+          First, the words from the input file are taken, accounting for their
+          case and unneeded punctuation.
+        </li>
+        <li>
+          Then, the words are added one-by-one to a HashMap with their
+          respective frequencies changing through every iteration.
+        </li>
+        <li>It is then sorted from highest to lowest frequency.</li>
+        <li>
+          Finally, the words and their frequencies are outputted into a new
+          file.
+        </li>
+      </ul>
+      <p style="text-align: justify">
+        The reason the HashMap was used in this case was because of its
+        simplicity of key-value pairs and its relevance to the problem. The
+        frequency list needs to have two things: words and its frequency.
+        Therefore, it is easy to see why a HashMap would best solve the problem.
+        However, HashMaps make no guarantee as to the order of the map. As such,
+        a function was created to sort the values from highest to lowest using
+        the available sort method in the Java Collections class.
+      </p>
+
+      <!-- Code snippet -->
+      <p style="text-align: justify">
+        The output for the file should look like:
+      </p>
+      <div class="rounded" style="background-color: #f6f8fa;">
+        <p class="pl-3 pt-2 pb-2" align="left">
+          31: the <br />
+          21: i <br />18: and
+        </p>
+      </div>
+      <p style="text-align: justify">
+        and so on.
+      </p>
+    </div>
+
+    <!-- Visualization and Music -->
+    <div>
+      <h5 align="left">Visualization and Music:</h5>
+      <p style="text-align:justify">
+        For this project, I chose this word cloud as the method of data
+        visualization because it is rather simple to view and understand. The
+        words grow larger according to its frequency and the shape of the data
+        is a record to represent music (and because I thought it looked cool).
+        If given more time, I would've liked to have used a JavaScript based
+        data visualization library such as <a href="https://d3js.org">D3.JS</a>.
+      </p>
+      <p style="text-align:justify">
+        The song I chose for this project is called "44 Bars" by Logic. Logic
+        has been one of my favorite artists for a long time now and since this
+        song is one of my favorites, I thought it was only appropriate.
+        Furthermore, it would be rather interesting to see how his songs compare
+        to one another so I would've liked to do a few more frequency lists if
+        allowed. The album that included this song named "Bobby Tarantino" was
+        released in 2016 and actually was his second album to be No. 1 on the
+        Billboard 200 Chart. Unsurprisingly, "people" was one of the most common
+        words in the song and was used to express his appreciation for all
+        people no matter what their background.
+      </p>
+    </div>
+
+    <!-- Conclusion -->
+    <div>
+      <h5 align="left">Conclusion:</h5>
+      <p style="text-align:justify">
+        The project was actually pretty fun to work on because we finally had
+        the opportunity to work with web languages instead of the usual Java
+        routine. I enjoyed learning about the world of data structures and what
+        they have to offer in the various fields in computer science as well as
+        doing projects such as this that are more hands-on.
+      </p>
+    </div>
+    <hr />
+
+    <!-- Song Lyrics -->
+    <h4>Song Lyrics</h4>
+    <div
+      id="rg_embed_link_2797979"
+      class="rg_embed_link"
+      data-song-id="2797979"
+    >
+      Read
+      <a href="https://genius.com/Logic-44-bars-lyrics">“44 Bars” by Logic</a>
+      on Genius
+    </div>
+    <script crossorigin src="//genius.com/songs/2797979/embed.js"></script>
+
+    <!-- Bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
